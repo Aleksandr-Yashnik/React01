@@ -1,4 +1,3 @@
-
 import CarCard from "../../components/CarCard/CarCard";
 import "./styles.css";
 
