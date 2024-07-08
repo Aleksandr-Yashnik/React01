@@ -1,0 +1,11 @@
+.homework-07 {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .component-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
