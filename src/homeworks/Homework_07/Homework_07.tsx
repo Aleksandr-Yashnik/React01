@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Feedback from "../../components/Feedback/Feedback";
-import LoginForm from "../../components/LoginForm/LoginForm";
-import SimpsonsCard from "../../components/SimponsCard/SimponsCard";
+import Feedback from "components/Feedback/Feedback";
+import LoginForm from "components/LoginForm/LoginForm";
+import SimpsonsCard from "components/SimponsCard/SimponsCard";
 import "./styles.css";
 
 const Homework_07: React.FC = () => {
