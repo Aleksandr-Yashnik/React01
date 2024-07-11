@@ -1,27 +1,39 @@
-import React from "react";
-import styled from "@emotion/styled";
-import Input from "components/Input/Input";
 import Button from "components/Button/Button";
+import Input from "components/Input/Input";
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-`;
+import { Homework08Wrapper, ButtonControl, InputControl } from "./styles";
 
-const Homework_08: React.FC = () => {
+function Homework_08() {
   return (
-    <Container>
-      <h1>Homework_08</h1>
-      <Input name="test" type="text" label="Enabled Input" />
-      <Input name="test" type="text" label="Disabled Input" disabled />
-      <Input name="test" type="text" label="Error Input" error="Some error" />
-      <Button name="Normal Button" onClick={() => alert("Clicked!")} />
-      <Button name="Disabled Button" onClick={() => alert("Clicked!")} disabled />
-      <Button name="Red Button" onClick={() => alert("Clicked!")} isRed />
-    </Container>
+    <Homework08Wrapper>
+      <ButtonControl>
+        <Button name="Simple Button" onClick={() => {}} />
+      </ButtonControl>
+      <ButtonControl>
+        {/* Если мы прокидываем пропсу компоненту и не передаем никакого значения(при условии что она буленовского типа)
+        То она у  по умолчанию она будет равна true
+        Пример: disabled у кнопки */}
+        <Button disabled name="Disabled Button" onClick={() => {}} />
+      </ButtonControl>
+      <ButtonControl>
+        <Button isRed name="Error Button" onClick={() => {}} />
+      </ButtonControl>
+      <InputControl>
+        <Input id="id_1" label="Simple Input" name="simpleInput" />
+      </InputControl>
+      <InputControl>
+        <Input disabled id="id_1" label="Simple Input" name="simpleInput" />
+      </InputControl>
+      <InputControl>
+        <Input
+          error="Some error"
+          id="id_1"
+          label="Simple Input"
+          name="simpleInput"
+        />
+      </InputControl>
+    </Homework08Wrapper>
   );
-};
+}
 
 export default Homework_08;
