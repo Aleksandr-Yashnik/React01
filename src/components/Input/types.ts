@@ -11,3 +11,9 @@ export interface InputProps {
   value?: string;
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
 }
+export interface Joke {
+  id: number;
+  type: string;
+  setup: string;
+  punchline: string;
+}
