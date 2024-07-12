@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { Container, Card, Button, ErrorMessage } from './styles';
-import {Joke} from 'components/Input/types';
+import {Joke} from './types';
+
+
 
 const Homework_09 = () => {
   const [joke, setJoke] = useState<Joke | null>(null);
