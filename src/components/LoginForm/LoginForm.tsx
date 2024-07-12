@@ -22,14 +22,14 @@ function LoginForm() {
       <p className="title">Login form</p>
       <div className="inputs-container">
         <Input
-         /* id="email-id"*/
+         id="email-id"
           name="email"
           type="email"
           placeholder="Enter your email"
           label="Email"
         />
         <Input
-          /*id="password-id"*/
+          id="password-id"
           name="password"
           type="password"
           placeholder="Enter your password"
