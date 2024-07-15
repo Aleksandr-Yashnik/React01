@@ -1,7 +1,7 @@
 import { useState, ChangeEvent } from "react";
 import axios from "axios";
 import { v4 } from "uuid";
-import Modal from "components/Modal/Modal";
+import Modal from "components/Model/Model";
 import Input from "components/Input/Input";
 import Button from "components/Button/Button";
 
